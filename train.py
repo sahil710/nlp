@@ -1,6 +1,7 @@
 import nltk
+import pickle5 as pickle
 from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer, PorterStemmer
+from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 import re
 # download required nltk data
@@ -164,5 +165,4 @@ lr_exp3_p1 = pipeline.predict(test_dataset['text_tokenized_no_punctuations'])
 accuracy = accuracy_score(test_dataset['new_label'], lr_exp3_p1)
 print('Accuracy:', accuracy)
 
-#TO DO: need to add code for saving the model
-
+pickle.dump(pipeline, open('flask-app/nlp_model.pkl', 'wb'))

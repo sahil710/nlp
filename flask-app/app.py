@@ -7,7 +7,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-MODEL_FILE_NAME = "final model.pkl"
+MODEL_FILE_NAME = "nlp_model.pkl"
 LOG_FILE_NAME = "log.csv"
 LOG_FILE_HEADER = ["time", "input", "result", "runtime"]
 

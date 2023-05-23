@@ -9,7 +9,7 @@ pip install -r requirements.txt
 
 python3 train.py
 
-cd flask-app  #TO DO: the train.py needs to modified to add code for saving the model
+cd flask-app
 
 python3 app.py
 
