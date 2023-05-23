@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NLP Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f5f5f5;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      #input-form {
+        margin-top: 20px;
+        text-align: center;
+      }
+      #input-text {
+        width: 400px;
+        height: 150px;
+        resize: none;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 16px;
+      }
+      #input-text:focus {
+        outline: none;
+        border-color: #999;
+      }
+      input {
+        margin-top: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      input:hover {
+        background-color: #45a049;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>NLP Processing</h1>
+    <div>
+      <center>
+        <form action="/result">
+          <textarea
+            id="input-text"
+            name="input-text"
+            placeholder="Enter text to process"
+          ></textarea>
+          <br />
+          <input type="submit" value="Process" />
+        </form>
+      </center>
+    </div>
+  </body>
+</html>
